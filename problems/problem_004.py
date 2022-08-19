@@ -13,4 +13,24 @@
 # problem to get a good feel for how to solve it.
 
 def max_of_three(value1, value2, value3):
-    pass
+
+    # Initialize variables
+    max = 0
+    values = [value1, value2, value3]
+
+    # Loop through list
+    for i in values:
+        if i >= max:
+            max = i
+
+    # Return max
+    return max
+
+
+# Initialize var
+value1 = 4
+value2 = 5
+value3 = 10
+
+# Invoke and print
+print(max_of_three(value1, value2, value3))

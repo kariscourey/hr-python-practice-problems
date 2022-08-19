@@ -14,4 +14,10 @@ def minimum_value(value1, value2):
     if value1 > value2:
         return value2
 
-print(minimum_value(10, 2))
+
+# Initialize var
+value1 = 10
+value2 = 2
+
+# Invoke and print
+print(minimum_value(value1, value2))

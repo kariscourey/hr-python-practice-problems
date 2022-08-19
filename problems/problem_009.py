@@ -13,4 +13,22 @@
 # problem to get a good feel for how to solve it.
 
 def is_palindrome(word):
-    pass
+
+    # Initialize
+    reverse = ""
+
+    # Reverse word to reversed object and typecast to list
+    reverse_iterable = list(reversed(word))
+
+    # Join iterable
+    reverse = reverse.join(reverse_iterable)
+
+    # Compare
+    return word == reverse
+
+
+# Initialize var
+word = "racecar"
+
+# Invoke and print
+print(is_palindrome(word))
