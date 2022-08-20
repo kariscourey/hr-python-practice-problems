@@ -8,4 +8,17 @@
 # problem to get a good feel for how to solve it.
 
 def is_divisible_by_5(number):
-    pass
+
+    """Evaluate number for divisible by 5"""
+
+    if number % 5 == 0:
+        return "buzz"
+    else:
+        return number
+
+
+# Initialize var
+num = 12
+
+# Invoke and print
+print(is_divisible_by_5(num))

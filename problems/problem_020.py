@@ -3,4 +3,15 @@
 # to 50% of the number of people in the members list.
 
 def has_quorum(attendees_list, members_list):
-    pass
+
+    """Evaluate attendees for majority"""
+
+    return (len(attendees_list) >= 0.50 * len(members_list))
+
+
+# Initialize var
+attendees_list = ['foo']
+members_list = ['foo', 'bar', 'baz']
+
+# Invoke and print
+print(has_quorum(attendees_list, members_list))

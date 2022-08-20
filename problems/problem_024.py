@@ -8,4 +8,23 @@
 # Pseudocode is available for you
 
 def calculate_average(values):
-    pass
+
+    """Calculate average"""
+
+    # Initialize var
+    sum = 0
+    count = 0
+
+    if values:
+        # Loop values
+        for i in values:
+            sum += i
+            count += 1
+        return sum / count
+
+
+# Initialize var
+values = []
+
+# Invoke and print
+print(calculate_average(values))

@@ -16,4 +16,21 @@
 # problem to get a good feel for how to solve it.
 
 def fizzbuzz(number):
-    pass
+
+    """Evaluate number for divisible by 3 and/or 5"""
+
+    if number % 3 == 0 and number % 5 == 0:
+        return "fizzbuzz"
+    elif number % 3 == 0:
+        return "fizz"
+    elif number % 5 == 0:
+        return "buzz"
+    else:
+        return number
+
+
+# Initialize var
+num = 15
+
+# Invoke and print
+print(fizzbuzz(num))

@@ -7,4 +7,24 @@
 #     "surfboard"
 
 def gear_for_day(is_workday, is_sunny):
-    pass
+
+    """Evaluate day for gear"""
+
+    gear = []
+
+    if (not is_sunny) and is_workday:
+        gear.append("umbrella")
+    elif is_workday:
+        gear.append("laptop")
+    else:
+        gear.append("surfboard")
+
+    return gear
+
+
+# Initialize var
+is_workday = False
+is_sunny = True
+
+# Invoke and print
+print(gear_for_day(is_workday, is_sunny))

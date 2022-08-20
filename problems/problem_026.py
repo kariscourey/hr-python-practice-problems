@@ -13,4 +13,35 @@
 #   * An "F" for any other average
 
 def calculate_grade(values):
-    pass
+
+    """Calculate grade"""
+
+    # Initialize var
+    sum = 0
+    count = 0
+
+    # Loop values
+    for i in values:
+        sum += i
+        count += 1
+
+    avg = sum / count
+
+    # Evaluate avg
+    if avg >= 90:
+        return "A"
+    elif avg >= 80:
+        return "B"
+    elif avg >= 70:
+        return "C"
+    elif avg >= 60:
+        return "D"
+    else:
+        return "F"
+
+
+# Initialize var
+values = [99, 98, 100, 80]
+
+# Invoke and print
+print(calculate_grade(values))

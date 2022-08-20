@@ -11,4 +11,21 @@
 # problem to get a good feel for how to solve it.
 
 def can_make_pasta(ingredients):
-    pass
+
+    """Evaluate ingredients for pastability"""
+
+    # Initialize var
+    pasta_ingredients = ['flour', 'eggs', 'oil']
+
+    # Compare
+    for i in pasta_ingredients:
+        if i not in ingredients:
+            return False
+    return True
+
+
+# Initialize var
+ingredients = ['flour', 'oil', 'water', 'sugar', 'eggs']
+
+# Invoke and print
+print(can_make_pasta(ingredients))

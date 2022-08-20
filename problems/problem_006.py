@@ -11,6 +11,8 @@
 
 def can_skydive(age, has_consent_form):
 
+    """Evaluate age, has_consent_form for ability to skydive"""
+
     # Return bool
     return age >= 18 or has_consent_form
 

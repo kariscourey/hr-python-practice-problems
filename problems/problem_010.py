@@ -12,6 +12,8 @@
 
 def is_divisible_by_3(number):
 
+    """Evaluate number for divisible by 3"""
+
     if number % 3 == 0:
         return "fizz"
     else:

@@ -11,4 +11,24 @@
 # If the list is empty, then return the empty string.
 
 def remove_duplicate_letters(s):
-    pass
+
+    """Remove duplicate letters from string"""
+
+    # Init var
+    letters = []
+
+    # Loop s
+    for i in s:
+        if i not in letters:
+            letters.append(i)
+
+    # Join elements of iterable
+    string = "".join(letters)
+    return string
+
+
+# Init var
+s = "ssstriiiiiingg"
+
+# Invoke and print
+print(remove_duplicate_letters(s))

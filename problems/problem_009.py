@@ -14,6 +14,8 @@
 
 def is_palindrome(word):
 
+    """Evaluate word for palindrome"""
+
     # Initialize
     reverse = ""
 

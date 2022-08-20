@@ -9,6 +9,9 @@
 # problem to get a good feel for how to solve it.
 
 def minimum_value(value1, value2):
+
+    """Evaluate 2 values for min"""
+
     if value1 <= value2:
         return value1
     if value1 > value2:

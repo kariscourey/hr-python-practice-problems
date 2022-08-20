@@ -7,4 +7,20 @@
 #
 
 def calculate_sum(values):
-    pass
+
+    """Calculate sum"""
+
+    # Initialize var
+    sum = 0
+
+    # Loop values
+    for i in values:
+        sum += i
+    return sum
+
+
+# Initialize var
+values = []
+
+# Invoke and print
+print(calculate_sum(values))

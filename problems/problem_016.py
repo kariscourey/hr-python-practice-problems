@@ -3,4 +3,15 @@
 # make sure they're between 0 and 10, inclusive.
 
 def is_inside_bounds(x, y):
-    pass
+
+    """Evalute x and y within bounds"""
+
+    return (x >= 0 and x <= 10) and (y >= 0 and y <= 10)
+
+
+# Initiatize var
+x = 8
+y = 9
+
+# Invoke and print
+print(is_inside_bounds(x, y))

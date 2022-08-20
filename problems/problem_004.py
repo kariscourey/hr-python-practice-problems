@@ -14,6 +14,8 @@
 
 def max_of_three(value1, value2, value3):
 
+    """Evaluate 3 values for max"""
+
     # Initialize variables
     max = 0
     values = [value1, value2, value3]
