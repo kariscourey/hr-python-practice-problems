@@ -24,7 +24,7 @@ def calculate_average(values):
 
 
 # Initialize var
-values = []
+values = [1, 3, 213, 1, 4]
 
 # Invoke and print
 print(calculate_average(values))
