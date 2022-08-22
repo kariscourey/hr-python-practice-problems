@@ -24,5 +24,21 @@
 # at the last one you just wrote unless you really must.
 
 
+class Employee:
+    def __init__(self, first, last):
+        self.first = first
+        self.last = last
+
+    def get_fullname(self):
+        return self.first + " " + self.last
+
+    def get_email(self):
+        return self.first.lower() + self.last.lower() + "@company.com"
 
 
+# Init instance
+person = Employee("KARIS", "COUREY")
+
+# Invoke method and print
+print(person.get_fullname())
+print(person.get_email())

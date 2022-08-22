@@ -14,9 +14,9 @@ def gear_for_day(is_workday, is_sunny):
 
     if (not is_sunny) and is_workday:
         gear.append("umbrella")
-    elif is_workday:
+    if is_workday:
         gear.append("laptop")
-    else:
+    if not is_workday:
         gear.append("surfboard")
 
     return gear
@@ -27,4 +27,4 @@ is_workday = False
 is_sunny = True
 
 # Invoke and print
-print(gear_for_day(is_workday, is_sunny))
+print(gear_for_day(False, True))

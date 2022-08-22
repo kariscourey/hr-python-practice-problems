@@ -14,4 +14,3 @@
 #      returns: "basia.farid"
 #    * input:   "basia_farid+test@yahoo.com"
 #      returns: "basia_farid+test"
-

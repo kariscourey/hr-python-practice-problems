@@ -9,7 +9,7 @@ def max_in_list(values):
     """Evaluate max"""
 
     # Initialize var
-    max = 0
+    max = values[0]
 
     # Loop values
     for i in values:

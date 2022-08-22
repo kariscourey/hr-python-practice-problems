@@ -16,4 +16,22 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_first_n_even_numbers(n):
-    pass
+
+    # Evaluate
+    if n > 0:
+
+        # Init var
+        sum = 0
+
+        # Loop
+        for i in range(n * 2):
+            if i % 2 == 0:
+                sum += i
+        return i
+
+
+# Init var
+n = 5
+
+# Invoke and print
+print(sum_of_first_n_even_numbers(n))

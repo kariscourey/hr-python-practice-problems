@@ -35,3 +35,22 @@
     # method get_email(self)
         # returns self.first_name.lower() + "." + self.last_name.lower()
         #         + "@company.com"
+
+class Employee:
+    def __init__(self, first, last):
+        self.first = first
+        self.last = last
+
+    def get_fullname(self):
+        return self.first + " " + self.last
+
+    def get_email(self):
+        return self.first.lower() + self.last.lower() + "@company.com"
+
+
+# Init instance
+person = Employee("KARIS", "COUREY")
+
+# Invoke method and print
+print(person.get_fullname())
+print(person.get_email())

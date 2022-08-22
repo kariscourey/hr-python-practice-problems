@@ -16,4 +16,3 @@
 #       result: 97 because from 3 to 100 is the biggest gap
 #
 # You may want to look at the built-in "abs" function
-

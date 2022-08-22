@@ -37,3 +37,24 @@
             # return True
         # otherwise
             # return None
+
+class Person:
+    def __init__(self, name, hate, love):
+        self.name = name
+        self.hate = hate
+        self.love = love
+
+    def taste(self, food):
+        if food in self.love:
+            return True
+        elif food in self.hate:
+            return False
+
+
+# Init instance
+instance = Person("Malik", ["cottage cheese", "sauerkraut"], ["pizza", "schnitzel"])
+
+# Invoke method and print
+print(instance.taste("lasagna"))
+print(instance.taste("sauerkraut"))
+print(instance.taste("pizza"))

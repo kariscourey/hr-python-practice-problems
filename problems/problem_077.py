@@ -6,7 +6,7 @@
 #    * radius, a non-negative value
 #
 # Behavior:
-#    * calculate_perimeter()  # Returns the length of the perimater of the circle
+#    * calculate_perimeter()  # Returns the length of the perimater of circle
 #    * calculate_area()       # Returns the area of the circle
 #
 # Example:
@@ -19,6 +19,7 @@
 
 import math
 
+
 # class Circle
     # method initializer with radius
         # if radius is less than 0
@@ -30,3 +31,24 @@ import math
 
     # method calculate_area(self)
         # returns math.pi * (self.radius squared)
+
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def calculate_perimeter(self):
+        peri = 2 * math.pi * self.radius
+        return peri
+
+    def calculate_area(self):
+        area = math.pi * (self.radius ** 2)
+        return area
+
+
+# Init instance
+circle = Circle(10)
+
+# Invoke method and print
+print(circle.calculate_perimeter())  # Prints 62.83185307179586
+print(circle.calculate_area())       # Prints 314.1592653589793

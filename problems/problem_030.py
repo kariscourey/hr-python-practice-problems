@@ -13,18 +13,18 @@
 
 # def find_second_largest(values):
 
-    # # Init var
-    # s_values = sorted(values)
+# # Init var
+# s_values = sorted(values)
 
-    # # Return
-    # return s_values[-2]
+# # Return
+# return s_values[-2]
 
 
 def find_second_largest(values):
 
     # Init
-    max = 0
-    second = 0
+    max = values[0]
+    second = values[0]
 
     # Loop for max
     for i in values:

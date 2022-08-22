@@ -14,6 +14,8 @@ def calculate_sum(values):
     sum = 0
 
     # Loop values
+    if values:
+
     for i in values:
         sum += i
     return sum

@@ -16,4 +16,18 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_first_n_numbers(limit):
-    pass
+
+    # Init var
+    sum = 0
+
+    # Loop
+    for i in range(limit):
+        sum += i
+    return sum + limit
+
+
+# Initialize var
+limit = 5
+
+# Invoke and print
+print(sum_of_first_n_numbers(limit))

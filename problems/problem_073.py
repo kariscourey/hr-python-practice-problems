@@ -23,5 +23,35 @@
 # at the last one you just wrote unless you really must.
 
 
+class Student:
+    def __init__(self, name):
+        self.name = name
+        self.scores = []
+
+    def add_score(self, score):
+        self.scores.append(score)
+
+    def get_average(self):
+
+        if self.scores:
+
+            sum = 0
+            count = 0
+
+            for i in self.scores:
+                sum += i
+                count += 1
+
+            return sum / count
 
 
+# Init instance
+student = Student("Karis")
+
+# Invoke method and print
+print(student.get_average())    # Prints None
+student.add_score(80)
+print(student.get_average())    # Prints 80
+student.add_score(90)
+student.add_score(82)
+print(student.get_average())    # Prints 84

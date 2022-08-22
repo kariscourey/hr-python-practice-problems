@@ -22,6 +22,28 @@
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
 
+class BankAccount:
+    def __init__(self, balance):
+        self.balance = balance
+
+    def get_balance(self):
+        return self.balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        return self.balance
+
+    def withdraw(self, amount):
+        self.balance -= amount
+        return self.balance
 
 
+# Init instance
+instance = BankAccount(100)
 
+# Invoke method and print
+print(instance.get_balance())    # Prints 100
+instance.deposit(80)
+print(instance.get_balance())    # Prints 180
+instance.withdraw(160)
+print(instance.get_balance())    # Prints 20

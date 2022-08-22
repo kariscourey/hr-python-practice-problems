@@ -14,4 +14,19 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_squares(values):
-    pass
+
+    # Init var
+    sum = 0
+
+    # Loop
+    for i in values:
+        square = i * i
+        sum += square
+    return sum
+
+
+# Initialize var
+values = [1, 2, 3]
+
+# Invoke and print
+print(sum_of_squares(values))

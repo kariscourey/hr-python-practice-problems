@@ -28,4 +28,25 @@
 # at the last one you just wrote unless you really must.
 
 def make_sentences(subjects, verbs, objects):
-    pass
+
+    # Init var
+    sentences = []
+
+    for subject in subjects:  # I
+        for verb in verbs:  # play
+            for object in objects:  # Portal
+                sentence = subject + " " + verb + " " + object
+                sentences.append(sentence)  # runs len(sub) * len(verb)
+                # * len(sent) # times ... when you concetenate,
+                # it makes a new string
+
+    return sentences
+
+
+# Initialize var
+subjects = ['I', 'We']
+verbs = ['play', 'watch', 'turn on']
+objects = ['Skyrim', 'DnD', 'BOTW']
+
+# Invoke and print
+print(make_sentences(subjects, verbs, objects))

@@ -19,6 +19,21 @@
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
 
+class Book:
+    def __init__(self, author, title):
+        self.author = author
+        self.title = title
+
+    def get_author(self):
+        return "Author: " + self.author
+
+    def get_title(self):
+        return "Title: " + self.title
 
 
+# Init instance
+quest = Book("JP Valentine", "This Quest is Bullshit")
 
+# Invoke method and print
+print(quest.get_author())
+print(quest.get_title())

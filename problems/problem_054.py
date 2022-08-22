@@ -14,4 +14,3 @@
 #      returns: "this is a string"
 #    * input:   "raise"
 #      RAISES:  ValueError
-
