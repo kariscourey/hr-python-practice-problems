@@ -26,7 +26,6 @@
 def group_cities_by_state(list):
 
     dict = {}
-    city = []
 
     for i in list:
         temp = i.split(", ")
@@ -38,7 +37,7 @@ def group_cities_by_state(list):
         if state in dict:
             dict[state].append(city)
         else:
-            dict[state] = city
+            dict[state] = [city]
 
     return dict
 

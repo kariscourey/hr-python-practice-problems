@@ -18,8 +18,19 @@ def halve_the_list(list):
     list1 = []
     list2 = []
 
-    length = len(list)
+    half = len(list) / 2
 
-    if length % 2 == 0:
-        for i in range(length / 2):
+    for i in list:
+        if (i - 1) <= half:
             list1.append(i)
+        else:
+            list2.append(i)
+
+    return list1, list2
+
+
+# Init var
+list = [1, 2, 3, 4, 5]
+
+# Invoke and print
+print(halve_the_list(list))
