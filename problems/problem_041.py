@@ -21,4 +21,27 @@
 # Write out your own pseudocode to help guide you.
 
 def add_csv_lines(csv_lines):
-    pass
+
+    # Evaluate
+    if csv_lines:
+
+        # Loop elements
+        for i in csv_lines:
+
+            temp = i.split(",")
+            sum = 0
+
+            # Loop split elements
+            for j in temp:
+                sum += int(j)
+
+            csv_lines[csv_lines.index(i)] = sum
+
+        return csv_lines
+
+
+# Init var
+csv_lines = ["8,1,7", "10,10,10", "1,2,3"]
+
+# Invoke and print
+print(add_csv_lines(csv_lines))

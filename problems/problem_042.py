@@ -13,4 +13,29 @@
 # Look up the zip function to help you with this problem.
 
 def pairwise_add(list1, list2):
-    pass
+
+    # Init var
+    zipped = list(zip(list1, list2))
+
+    # Loop
+    for i in zipped:
+        sum = 0
+
+        for j in i:
+            sum += j
+
+            # TODO
+            # try:
+            list1[list1.index(j)] = sum
+            # except ValueError:
+                # pass
+
+    return list1
+
+
+# Init var
+list1 = [100, 200, 300]
+list2 = [10, 1, 180]
+
+# Invoke and print
+print(pairwise_add(list1, list2))

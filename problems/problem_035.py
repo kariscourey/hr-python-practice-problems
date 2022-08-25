@@ -24,4 +24,24 @@
 # at the last one you just wrote unless you really must.
 
 def count_letters_and_digits(s):
-    pass
+
+    # Evaluate and init var
+    if s:
+        letters = 0
+        digits = 0
+
+        # Loop s
+        for i in s:
+            if i.isalpha():
+                letters += 1
+            if i.isdigit():
+                digits += 1
+
+        return letters, digits
+
+
+# Initialize var
+s = "karis! is not 321"
+
+# Invoke and print
+print(count_letters_and_digits(s))

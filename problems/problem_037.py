@@ -24,4 +24,16 @@
 #     result: "   19"
 
 def pad_left(number, length, pad):
-    pass
+
+    # Init var
+    string = []
+
+    # Loop
+    for i in range(length - len(str(number))):
+        string.append("*")
+
+    return "".join(string) + str(number)
+
+
+# Invoke and print
+print(pad_left(1, 4, "*"))

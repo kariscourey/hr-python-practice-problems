@@ -17,6 +17,8 @@
 
 def sum_of_first_n_even_numbers(n):
 
+# TODO
+
     # Evaluate
     if n > 0:
 
@@ -24,10 +26,10 @@ def sum_of_first_n_even_numbers(n):
         sum = 0
 
         # Loop
-        for i in range(n * 2):
+        for i in range(n * 2 + 1):
             if i % 2 == 0:
                 sum += i
-        return i
+        return sum
 
 
 # Init var
