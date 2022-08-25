@@ -13,3 +13,21 @@
 #                lows:  [72, 78, 70, 70]
 #       result:         [ 8,  3,  5, 10]
 
+
+def temperature_differences(highs, lows):
+
+    # Init var
+    diff = []
+
+    # Loop
+    for index, value in enumerate(highs):
+        diff.append(value - lows[index])
+
+    return diff
+
+
+# Init var
+highs, lows = [80, 81, 75, 80], [72, 78, 70, 70]
+
+# Invoke and print
+print(temperature_differences(highs, lows))

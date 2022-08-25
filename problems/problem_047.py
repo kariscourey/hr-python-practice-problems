@@ -13,4 +13,32 @@
 # like ".isalpha", ".isdigit", ".isupper", and ".islower"
 
 def check_password(password):
-    pass
+
+    # Check len
+    if len(password) >= 6 and len(password) <= 12:
+
+        upper = False
+        lower = False
+        number = False
+        character = False
+
+        for i in password:
+            if i.isupper():
+                upper = True
+            elif i.islower():
+                lower = True
+            elif i.isdigit():
+                number = True
+            elif i in ["$", "!", "@"]:
+                character = True
+
+        return upper and lower and number and character
+
+    return False
+
+
+# Init var
+password = "kAris!12"
+
+# Invoke and print
+print(check_password(password))

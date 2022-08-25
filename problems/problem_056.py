@@ -15,3 +15,13 @@
 #       parameter 2: 0
 #     returns: "92380"
 
+
+def num_concat(num1, num2):
+    return str(num1) + str(num2)
+
+
+# Init var
+num1, num2 = 1901, 182
+
+# Invoke and print
+print(num_concat(num1, num2))

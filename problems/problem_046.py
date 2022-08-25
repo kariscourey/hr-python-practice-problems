@@ -43,7 +43,7 @@ def make_sentences(subjects, verbs, objects):
     return sentences
 
 
-# Initialize var
+# Init var
 subjects = ['I', 'We']
 verbs = ['play', 'watch', 'turn on']
 objects = ['Skyrim', 'DnD', 'BOTW']

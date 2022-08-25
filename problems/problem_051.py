@@ -7,3 +7,18 @@
 #
 # Don't for get to import math!
 
+import math
+
+
+def safe_divide(num, den):
+
+    if den != 0:
+        return num/den
+    return math.inf
+
+
+# Init var
+num1, num2 = 2, 1
+
+# Invoke and print
+print(safe_divide(num1, num2))

@@ -24,13 +24,10 @@ def pairwise_add(list1, list2):
         for j in i:
             sum += j
 
-            # TODO
-            # try:
-            list1[list1.index(j)] = sum
-            # except ValueError:
-                # pass
+            if j in list2:
+                list2[list2.index(j)] = sum
 
-    return list1
+    return list2
 
 
 # Init var

@@ -13,3 +13,22 @@
 #     * input:   [1, 3, 5, 7]
 #       returns: [1, 3, 5, 7]
 
+
+def only_odds(list):
+
+    # Init var
+    odds = []
+
+    # Loop
+    for i in list:
+        if i % 2 == 1:
+            odds.append(i)
+
+    return odds
+
+
+# Init var
+list = [1, 2, 3, 4]
+
+# Invoke and print
+print(only_odds(list))

@@ -23,3 +23,23 @@
 #     * inputs:  10, "/", 12
 #       result:  0.8333333333333334
 
+import operator
+
+
+def basic_calculator(left, op, right):
+
+    ops = {
+        '+': operator.add,
+        '-': operator.sub,
+        '*': operator.mul,
+        '/': operator.truediv,
+    }
+
+    return (ops[op](left, right))
+
+
+# Invoke and print
+print(basic_calculator(10, "*", 2))
+print(basic_calculator(10, "/", 2))
+print(basic_calculator(10, "-", 2))
+print(basic_calculator(10, "+", 2))

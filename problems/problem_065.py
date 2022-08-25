@@ -16,3 +16,25 @@
 #       result: 97 because from 3 to 100 is the biggest gap
 #
 # You may want to look at the built-in "abs" function
+
+
+def biggest_gap(list):
+
+    # Init var
+    biggest = 0
+
+    # Loop
+    for i in range(len(list) - 1):
+        diff = abs(list[i] - list[i + 1])
+
+        if diff > biggest:
+            biggest = diff
+
+    return biggest
+
+
+# Init var
+list = [1, 11, 9, 20, 0]
+
+# Invoke and print
+print(biggest_gap(list))

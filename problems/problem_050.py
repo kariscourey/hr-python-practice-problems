@@ -12,3 +12,14 @@
 #    * input: [1, 2, 3]
 #      result: [1, 2], [3]
 
+def halve_the_list(list):
+
+    # Init var
+    list1 = []
+    list2 = []
+
+    length = len(list)
+
+    if length % 2 == 0:
+        for i in range(length / 2):
+            list1.append(i)

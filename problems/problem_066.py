@@ -20,16 +20,16 @@
 
 
 # class Book
-    # method initializer method with required state
-    # parameters author and title
-        # set self.author = author
-        # set self.title = title
+# # method initializer method with required state
+# # parameters author and title
+# # # set self.author = author
+# # # set self.title = title
 
-    # method get_author(self)
-        # returns "Author: " + self.author
+# # method get_author(self)
+# # # eturns "Author: " + self.author
 
-    # method get_title(self)
-        # returns "Title: " + self.title
+# # method get_title(self)
+# # # returns "Title: " + self.title
 
 
 class Book:

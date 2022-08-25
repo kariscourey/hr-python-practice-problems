@@ -14,3 +14,22 @@
 #     * input:   [1, 3, 3, 20, 3, 2, 2]
 #       returns: [1, 3, 20, 2]
 
+
+def remove_duplicates(list):
+
+    # Init var
+    copy = []
+
+    # Loop
+    for i in list:
+        if i not in copy:
+            copy.append(i)
+
+    return copy
+
+
+# Init var
+list = [1, 2, 2, 1, 3, 4]
+
+# Invoke and print
+print(remove_duplicates(list))

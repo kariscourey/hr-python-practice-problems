@@ -14,3 +14,15 @@
 #      returns: "basia.farid"
 #    * input:   "basia_farid+test@yahoo.com"
 #      returns: "basia_farid+test"
+
+def username_from_email(email):
+
+    splat = email.split("@")
+    return splat[0]
+
+
+# Init var
+email = "basia.farid@yahoo.com"
+
+# Invoke and print
+print(username_from_email(email))

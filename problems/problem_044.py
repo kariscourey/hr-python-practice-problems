@@ -18,4 +18,25 @@
 # Remember that a dictionary has the ".get" method on it.
 
 def translate(key_list, dictionary):
-    pass
+
+    # Init var
+    result = []
+
+    # Loop
+    for i in key_list:
+        if i not in dictionary:
+            result.append(None)
+        else:
+            for j in dictionary:
+                if i == j:
+                    result.append(dictionary[j])
+
+    return result
+
+
+# Init var
+key_list = ["eye color", "age"]
+dictionary = {"name": "Noor", "age": 29}
+
+# Invoke and print
+print(translate(key_list, dictionary))

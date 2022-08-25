@@ -22,3 +22,29 @@
 #
 # You may want to look up the ".strip()" method for the string.
 
+
+def group_cities_by_state(list):
+
+    dict = {}
+    city = []
+
+    for i in list:
+        temp = i.split(", ")
+        state = temp[1]
+        city = temp[0]
+
+        # if dict.get(state) is not None:
+
+        if state in dict:
+            dict[state].append(city)
+        else:
+            dict[state] = city
+
+    return dict
+
+
+# Init var
+list = ["Cleveland, OH", "Columbus, OH", "Chicago, IL"]
+
+# Invoke and print
+print(group_cities_by_state(list))

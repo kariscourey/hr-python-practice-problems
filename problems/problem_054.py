@@ -14,3 +14,16 @@
 #      returns: "this is a string"
 #    * input:   "raise"
 #      RAISES:  ValueError
+
+def check_input(value):
+
+    if value == "raise":
+        raise ValueError
+    return value
+
+
+# Init var
+value = "raise"
+
+# Invoke and print
+print(check_input(value))
