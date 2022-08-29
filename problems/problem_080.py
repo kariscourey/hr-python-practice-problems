@@ -58,17 +58,20 @@ class Receipt:
 
 
 class ReceiptItem:
+    def __init__(self, quantity, price):
+        self.quantity = quantity
+        self.price = price
 
+    def get_total(self):
+        return self.quantity * self.price
 
-
-# TODO
 
 # Init instance
 item = Receipt(0.1)
 
 # Invoke method
-item.add_item(Receipt(4, 2.50))
-item.add_item(Receipt(2, 5.00))
+item.add_item(ReceiptItem(4, 2.50))
+item.add_item(ReceiptItem(2, 5.00))
 
 # Invoke method and print
 print(item.get_subtotal())     # Prints 20
